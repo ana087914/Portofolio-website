@@ -48,23 +48,17 @@ function animateHeader() {
   const scrollY = window.scrollY;
 
   if (scrollY > 50) {
-    header.classList.add('header-scrolled');
+   
   } else {
-    header.classList.remove('header-scrolled');
+   
   }
 }
 
 // Animated text effect in header
 function animateHeaderText() {
   const headerText = document.querySelector('.header-text');
-  const text = headerText.textContent;
-  headerText.textContent = '';
-  [...text].forEach((letter, i) => {
-    const span = document.createElement('span');
-    span.textContent = letter;
-    span.style.animationDelay = `${i * 0.05}s`;
-    headerText.appendChild(span);
-  });
+  
+  
 }
 
 // Initialize animations

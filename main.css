@@ -77,9 +77,14 @@ header {
 }
 
 .foto-start {
-  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 500px;
   height: 500px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #000;
 }
 
 .text-content {
@@ -178,25 +183,8 @@ section.reveal-visible {
   transform: translateY(0);
 }
 
-h2 {
-  font-size: 30px;
-  font-weight: 500;
-  color: #9b7ebd;
-}
-
 p {
   font-size: 1.2rem;
-}
-
-.foto-start {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #000;
 }
 
 .profile-photo {
@@ -214,6 +202,7 @@ h2 {
   height: 100px;
   font-family: "Lora", serif;
   padding-left: 420px;
+  font-size: 30px;
 }
 
 .about {
@@ -253,7 +242,7 @@ h2 {
 }
 
 .text-4 {
-  color: #3f1d58;
+  color: #8e3ec7;
 }
 
 .work {
@@ -323,53 +312,13 @@ h2 {
   opacity: 1;
   transform: translateY(0);
 }
+
 /* Header Styling */
-header.header {
+header {
   text-align: center;
   padding: 50px 0;
 }
 
-header .header-text {
-  font-size: 3rem;
-  font-weight: bold;
-  background: linear-gradient(90deg, #8a2be2, #e040fb, #8a2be2);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  animation: shineText 4s linear infinite, headerBounce 6s ease-in-out infinite;
-}
-
-/* Tekst glans effect */
-@keyframes shineText {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 200%;
-  }
-}
-
-/* Subtiele header beweging */
-@keyframes headerBounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 /* Buttons with Shine Effect */
 button.hire-me,
 a.icon {
@@ -562,7 +511,7 @@ body {
   width: 100%;
   background: none;
   border: none;
-  color: #2d2a35;
+  color: #fff;
   font-size: 1rem;
   outline: none;
   padding: 5px;
@@ -570,7 +519,7 @@ body {
 
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-  color: #2d2a35;
+  color: #fff;
 }
 
 .contact-info {
@@ -580,7 +529,7 @@ body {
 .contact-info p {
   margin-bottom: 40px;
   font-size: 1.2rem;
-  color: #bbb;
+  color: #fff;
 }
 
 .contact-info strong {
@@ -595,6 +544,22 @@ h4 {
   justify-content: center;
   margin-bottom: 50px;
 }
+.send-button {
+  background-color: #9b7ebd;
+  color: #fff;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 15px 30px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #6a5c8c;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 1100px) {
   /* Media gebruiken */
   body {
