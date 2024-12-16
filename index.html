@@ -72,7 +72,7 @@
             <i class="fab fa-whatsapp"></i>
           </a>
         </div>
-        <button class="hire-me">Hire me</button>
+        <button class="hire-me" onclick="redirectToContact()">Hire me</button>
       </div>
     </div>
 
@@ -151,19 +151,27 @@
       <h4>Contact me</h4>
       <div class="neon-border">
         <div class="content-wrapper">
-          <form class="contact-form">
+          <form class="contact-form" action="send_email.php" method="post">
             <div class="input-box">
-              <input type="text" placeholder="Your name" required />
+              <input type="text" name="name" placeholder="Your name" required />
             </div>
             <div class="input-box">
-              <input type="email" placeholder="Your email" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
             </div>
             <div class="input-box">
-              <textarea placeholder="Your message" rows="5" required></textarea>
+              <textarea
+                name="message"
+                placeholder="Your message"
+                rows="5"
+                required
+              ></textarea>
             </div>
-            <button class="send-button" action="mailto:ana.t08@yahoo.com">
-              Send
-            </button>
+            <button class="send-button" type="submit">Send</button>
           </form>
           <div class="contact-info">
             <p><strong>My phone number</strong><br />0031620243966</p>

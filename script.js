@@ -53,6 +53,9 @@ function animateHeader() {
    
   }
 }
+function redirectToContact() {
+  window.location.href = "#contact"; // Navighează la secțiunea de contact
+}
 
 // Animated text effect in header
 function animateHeaderText() {
