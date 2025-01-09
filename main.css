@@ -67,7 +67,9 @@ header {
   color: #d4bee4;
 }
 
-/* Home Section */
+/*
+ Home Section 
+ */
 .home-container {
   display: flex;
   justify-content: center;
@@ -319,7 +321,9 @@ header {
   padding: 50px 0;
 }
 
-/* Buttons with Shine Effect */
+/* 
+Buttons with Shine Effect 
+*/
 button.hire-me,
 a.icon {
   position: relative;
@@ -360,7 +364,9 @@ a.icon:hover::after {
   transform: translateX(50%) rotate(45deg);
 }
 
-/* Shimmer Effect */
+/* 
+Shimmer Effect
+ */
 .shimmer-effect {
   animation: shimmer 1.5s linear infinite;
 }
@@ -376,7 +382,9 @@ a.icon:hover::after {
     background-position: -200%;
   }
 }
-/* Background Animations */
+/* 
+Background Animations
+ */
 /* Zwarte achtergrond met paarse animatie */
 body {
   background: linear-gradient(45deg, #000, #000, #000); /* Zwart met paars */
